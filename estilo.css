@@ -1,9 +1,14 @@
 .primeiro {
-    display: flex;
+    color: rgb(80, 55, 43);
+    display:grid;
     justify-content: center;
+    grid-gap: 20px 10px;
+    padding: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: bisque;
     border-radius: 20px;
+}
+
 body {
     background-color: black;
 }
