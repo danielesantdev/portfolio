@@ -257,7 +257,7 @@ code {
 
 /* Estado sem foto ainda: mostra iniciais bonitas em vez de quebrar */
 .moldura--vazia::before {
-  content: "🌿";
+  content: "img";
   font-size: 4rem;
 }
 
