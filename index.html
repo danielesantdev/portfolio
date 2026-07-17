@@ -1,19 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Daniele Sant'Anna · Front-End Developer em formação</title>
+  <meta name="description" content="Portfólio de front-end em construção — HTML5, CSS3 e muita vontade de aprender.">
+
+  <!-- Fontes do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <div class="primeiro">
-        <h1>Olá mundo</h1>
-    </div>
-    <form>
-        <button> <LabeL> Atualizar </Label> </button>
-    </form>
 
+  <!-- ===================== NAVEGAÇÃO ===================== -->
+  <header class="topo">
+    <nav class="nav container">
+      <a href="#inicio" class="nav__logo">DS<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="#trajetoria">Minha trajetória</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="assets/curriculo.pdf" download>Currículo</a></li>
+        <li><a href="#contato" class="nav__cta">Fale comigo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section id="inicio" class="hero container">
+      <div class="hero__texto">
+        <p class="eyebrow">Olá, eu sou</p>
+        <h1 class="hero__titulo">Daniele Sant'Anna</h1>
+        <p class="hero__frase">Front-End Developer em formação</p>
+        <p class="hero__sub">
+          Ex-nutricionista, atual apaixonada por código. Construindo minha nova carreira
+          um <code>&lt;div&gt;</code> de cada vez 🌱
+        </p>
+
+        <div class="hero__botoes">
+          <a href="#projetos" class="botao botao--cheio">Ver projetos</a>
+          <a href="assets/curriculo.pdf" download class="botao botao--linha">Currículo</a>
+          <a href="#trajetoria" class="botao botao--linha">Minha trajetória</a>
+          <a href="#contato" class="botao botao--linha">Fale comigo</a>
+        </div>
+      </div>
+
+      <div class="hero__foto">
+        <div class="anel-organico" aria-hidden="true"></div>
+        <div class="moldura">
+          <!-- Troque a imagem abaixo pela sua foto ou ilustração -->
+          <img src="assets/foto-perfil.jpg" alt="Ilustração de perfil" onerror="this.style.display='none'; this.parentElement.classList.add('moldura--vazia')">
+        </div>
+        <svg class="folha-hero" width="46" height="46" viewBox="0 0 46 46" aria-hidden="true">
+          <path d="M23 3C10 10 6 24 14 36c6 8 18 8 24 0-14 2-22-6-22-14 0-8 4-15 7-19z" fill="var(--mostarda)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE MIM ===================== -->
+    <section id="sobre" class="sobre container">
+      <p class="eyebrow">Sobre mim</p>
+      <h2 class="titulo-secao">Da nutrição para o código</h2>
+
+      <div class="sobre__conteudo">
+        <p>
+          Em 2025 me formei em <strong>Nutrição pela UFPEL</strong> — um caminho que amei trilhar.
+          Ainda nos últimos meses do curso, entrei de cabeça no mundo do
+          <strong>email marketing</strong> em uma startup super tecnológica, e foi ali que uma
+          curiosidade nova começou a brotar em mim.
+        </p>
+        <p>
+          Pouco a pouco, essa curiosidade virou vontade de verdade: descobri a
+          <strong>Formação Acelerada em Desenvolvimento Front-End</strong>, do Instituto Hardware
+          em parceria com o IFSUL, e decidi mergulhar de cabeça. Hoje, entre um HTML e um CSS,
+          sinto que encontrei um universo com milhões de portas — e mal posso esperar para abrir
+          todas elas.
+        </p>
+        <p>
+          Tenho 25 anos, sou libriana <em>(então sim, adoro equilíbrio, estética e uma boa
+          conversa)</em>, casada, apaixonada por cozinhar e por livros, e mãe de dois gatos que
+          insistem em sentar no teclado bem na hora do código. 🐾
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== TRAJETÓRIA / TIMELINE ===================== -->
+    <section id="trajetoria" class="trajetoria">
+      <div class="container">
+        <p class="eyebrow">Minha história</p>
+        <h2 class="titulo-secao">Minha trajetória</h2>
+
+        <ol class="timeline">
+          <li class="timeline__item">
+            <span class="timeline__data">2021 — 2025</span>
+            <h3>Graduação em Nutrição</h3>
+            <p>UFPEL. Quatro anos de muito estudo sobre como cuidar das pessoas — e de mim.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__data">2025</span>
+            <h3>Primeiro emprego em tecnologia</h3>
+            <p>Comecei a trabalhar com email marketing em uma startup e descobri que tecnologia
+              também podia ser o meu lugar.</p>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__data">2026</span>
+            <h3>Formação Acelerada em Front-End</h3>
+            <p>Instituto Hardware + IFSUL. Aprendendo HTML5, CSS3 e me apaixonando por design a
+              cada aula.</p>
+          </li>
+          <li class="timeline__item timeline__item--atual">
+            <span class="timeline__data">Hoje</span>
+            <h3>Construindo este portfólio</h3>
+            <p>Meu primeiro projeto de verdade na área — e a prova de que já sei fazer algo com
+              minhas próprias mãos.</p>
+          </li>
+          <li class="timeline__item timeline__item--futuro">
+            <span class="timeline__data">Próximo passo</span>
+            <h3>Faculdade de Desenvolvimento de Software</h3>
+            <p>Meu objetivo de longo prazo: cursar Desenvolvimento de Software/Sistemas para
+              Internet e seguir crescendo em UX/UI.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== HABILIDADES ===================== -->
+    <section id="habilidades" class="habilidades container">
+      <p class="eyebrow">O que eu sei (por enquanto)</p>
+      <h2 class="titulo-secao">Habilidades em crescimento</h2>
+      <p class="habilidades__intro">
+        Sou bem no comecinho da estrada — mas o que falta em experiência sobra em vontade de
+        aprender. Aqui está onde estou agora:
+      </p>
+
+      <div class="skills">
+        <div class="skill">
+          <div class="skill__cabecalho">
+            <svg viewBox="0 0 24 24" class="skill__icone"><path fill="currentColor" d="M3 2l1.7 19L12 23l7.3-2L21 2H3zm14.3 6.2H8.4l.2 2.3h8.5l-.6 6.6-4.5 1.3-4.5-1.3-.3-3.4h2.2l.2 1.7 2.4.6 2.4-.6.3-3H7.9L7.3 5h9.4l-.4 3.2z"/></svg>
+            <h3>HTML5</h3>
+          </div>
+          <div class="skill__barra"><div class="skill__preenchimento" style="--nivel:70%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill__cabecalho">
+            <svg viewBox="0 0 24 24" class="skill__icone"><path fill="currentColor" d="M3 2l1.7 19L12 23l7.3-2L21 2H3zm13.7 6.2H8l.2 2.3h8l-.2 2.2H8.4l.5 5.8 3.6 1 3.6-1 .4-4.2h-2.3l-.2 2.4-1.5.4-1.5-.4-.1-1.7h-2.3l.3 3.6 3.7 1 3.7-1 .8-9.4H7.7L7.4 5h9.4l-.1.2z" opacity=".0"/><path fill="currentColor" d="M4.7 21L3 2h18l-1.7 19L12 23zM8 6l.2 2.2h9.2L17 10H8.5l.3 2.2h8l-.5 6-4.3 1.2-4.3-1.2-.3-3.2h2.2l.1 1.6 2.3.6 2.3-.6.2-2.3H6.6L6 6z"/></svg>
+            <h3>CSS3</h3>
+          </div>
+          <div class="skill__barra"><div class="skill__preenchimento" style="--nivel:65%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill__cabecalho">
+            <svg viewBox="0 0 24 24" class="skill__icone"><path fill="currentColor" d="M3 3h18v18H3V3zm10 15v-2h-2v2h2zm-2-4h2c0-3 3-2.7 3-5a3 3 0 00-6-.3l1.8.7c.1-.8.7-1.4 1.5-1.4.9 0 1.5.6 1.5 1.4 0 1.4-2.8 1.3-2.8 4.6z"/></svg>
+            <h3>Noções de UX/UI &amp; Design</h3>
+          </div>
+          <div class="skill__barra"><div class="skill__preenchimento" style="--nivel:40%"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill__cabecalho">
+            <svg viewBox="0 0 24 24" class="skill__icone"><path fill="currentColor" d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h12v2H3v-2z"/></svg>
+            <h3>Layouts &amp; Responsividade</h3>
+          </div>
+          <div class="skill__barra"><div class="skill__preenchimento" style="--nivel:50%"></div></div>
+        </div>
+
+        <div class="skill skill--especial">
+          <div class="skill__cabecalho">
+            <svg viewBox="0 0 24 24" class="skill__icone"><path fill="currentColor" d="M12 21s-7-4.5-9.5-9C.5 8 2 4 6 4c2 0 3.5 1 4 2 .5 0 .5-2 4-2 4 0 5.5 4 3.5 8-2.5 4.5-9.5 9-9.5 9z" opacity=".0"/><path fill="currentColor" d="M12 21c-.2 0-.4-.1-.6-.2C10.5 20 3 15.3 3 9a5 5 0 019-3 5 5 0 019 3c0 6.3-7.5 11-8.4 11.8-.2.1-.4.2-.6.2z"/></svg>
+            <h3>Vontade de aprender</h3>
+          </div>
+          <div class="skill__barra"><div class="skill__preenchimento" style="--nivel:100%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETOS ===================== -->
+    <section id="projetos" class="projetos">
+      <div class="container">
+        <p class="eyebrow">O que já construí</p>
+        <h2 class="titulo-secao">Projetos</h2>
+        <p class="projetos__intro">
+          Estou no início da jornada, então minha lista ainda é curtinha — mas cada projeto aqui
+          é 100% meu, feito com HTML5 e CSS3 do zero.
+        </p>
+
+        <div class="projetos__grid">
+          <article class="card-projeto">
+            <div class="card-projeto__topo">
+              <span class="card-projeto__numero">01</span>
+              <span class="card-projeto__tag">Em produção</span>
+            </div>
+            <h3>Este portfólio</h3>
+            <p>
+              O próprio site que você está vendo agora. Praticei estrutura semântica em HTML5,
+              Flexbox e Grid em CSS3, variáveis de cor, responsividade e um design pensado do
+              zero para contar minha própria história.
+            </p>
+            <div class="card-projeto__stack">
+              <span>HTML5</span><span>CSS3</span><span>Design</span>
+            </div>
+            <div class="card-projeto__links">
+              <a href="#">Ver código</a>
+              <a href="#">Ver ao vivo</a>
+            </div>
+          </article>
+
+          <article class="card-projeto card-projeto--futuro">
+            <div class="card-projeto__topo">
+              <span class="card-projeto__numero">02</span>
+            </div>
+            <h3>Próximo projeto</h3>
+            <p>Ainda brotando 🌱 — assim que eu terminar meu próximo trabalho de aula, ele entra
+              aqui.</p>
+          </article>
+
+          <article class="card-projeto card-projeto--futuro">
+            <div class="card-projeto__topo">
+              <span class="card-projeto__numero">03</span>
+            </div>
+            <h3>Próximo projeto</h3>
+            <p>Reservado para o que vier depois. A lista só vai crescer a partir daqui.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section id="contato" class="contato">
+      <div class="container contato__grid">
+        <div class="contato__texto">
+          <p class="eyebrow">Vamos conversar</p>
+          <h2 class="titulo-secao">Fale comigo</h2>
+          <p>
+            Estou construindo minha carreira em front-end e adoraria trocar uma ideia, receber
+            um feedback ou simplesmente bater um papo sobre tecnologia e design.
+          </p>
+          <ul class="contato__links">
+            <li><a href="mailto:seuemail@exemplo.com">danielesvaz@hotmail.com</a></li>
+            <li><a href="www.linkedin.com/in/daniele-sant-anna" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+
+        <form class="formulario" action="#" method="post">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Como posso te chamar?" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+          <button type="submit" class="botao botao--cheio">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Feito com 🌿 e muito HTML/CSS por Seu Nome — © 2026</p>
+  </footer>
 
 </body>
 </html>
